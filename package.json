@@ -1,0 +1,23 @@
+{
+  "name": "ejs-challenge",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.27.2",
+    "body-parser": "^1.18.3",
+    "ejs": "^2.6.1",
+    "express": "^4.18.1",
+    "express-fileupload": "^1.2.1",
+    "lodash": "^4.17.21",
+    "mongoose": "^6.1.6",
+    "nodemon": "^2.0.15",
+    "razorpay": "^2.8.3"
+  }
+}

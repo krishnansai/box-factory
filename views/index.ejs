@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>SVP Packaging</title>
+ 
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+    crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="./Style.css" />
+  <link rel="stylesheet" href="./mobile-style.css">
+ 
+</head>
+ 
+<body>
+  <header>
+    <div class="container-fluid p-0">
+      <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand" href="/index">
+          <i class="fas fa-book-reader fa-2x mx-3"></i>SVP Packaging</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <i class="fas fa-align-right text-light"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <div class="mr-auto"></div>
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="/index">HOME
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <!-- <li class="nav-item">
+              <a class="nav-link" href="/compose">ADD YOUR PRODUCT</a>
+            </li> -->
+            <li class="nav-item">
+              <a class="nav-link" href="/index#books">PRODUCTS</a>
+            </li>
+ 
+            <li class="nav-item">
+              <a class="nav-link" href="/index#about">ABOUT</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/index#contact">CONTACTS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/">LOGOUT</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/adminreg">ADMIN</a>
+              </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <div class="container text-center">
+      <div class="row">
+        <div class="col-md-7 col-sm-12  text-white">
+          <h2>NEW ARRIVALS</h2>
+          <h3>BEST OFFER ALWAYS FOR OUR CUSTOMERS</h3>
+          <p>
+            Exciting offers and your have very
+           useful for packgings your things<br> a good company can help forever. 
+          </p>
+          <!-- <button class="btn btn-light px-5 py-2 primary-btn">
+ 
+          </button> -->
+        </div>
+        <div class="col-md-5 col-sm-12  h-25">
+          <img src="../assets/5671120.jpg" alt="Book" />
+        </div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="section-1">
+      <div class="container text-center">
+        <div class="row">
+          <div class="col-md-6 col-12">
+            <div class="pray">
+              <!-- <img src="../assets/pexels-photo-1904769.jpeg" alt="Pray" class="" /> -->
+              <img src="../assets/bgimg.jpg" alt="Pray" class="" />
+            </div>
+          </div>
+          <div class="col-md-6 col-12">
+            <div class="panel text-left" id="about">
+              <h1>About</h1>
+              <p class="pt-4">
+                comprised of the trademark, our design, color and information – is the sole communicator of our brand essence. Put another way – when you don’t have anything else – our packaging is our Marketing.
+                Considering clean packaging in the context of enabling good packaging, it’s an opportunity for all brands large and small to tell better stories and demonstrate that the well-being of their customers is a top priority.
+               <br>
+               <p></p>      
+          
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+ 
+     <section class="section-2 container-fluid p-0" id="books">
+      <div class="cover">
+         <div class="overlay"></div> 
+        <div class="content text-center">
+          <h1>Total Number of Products Available :<%=datas.length%></h1>
+ 
+        </div>
+      </div>
+ 
+ 
+       <div class="container-fluid text-center" >
+ 
+ 
+        <div class="numbers d-flex flex-md-row flex-wrap justify-content-center "  >
+ 
+ 
+            <% datas.forEach((e)=>{ %>
+                <div class="rect " style="cursor: pointer;" onclick="window.location.href='/new/<%=e.bname%>'" >
+ 
+                  <h3 ><%=e.bname%></h3>
+                  <h5 >Product : <%=e.name%></h3>
+                   <button class="btn btn-dark bgap"><i class="fas fa-arrow-right"></i></button>
+                </div>
+ 
+          <% }) %>
+ 
+ 
+        </div>
+      </div> 
+ 
+        </div>
+      </div>
+ 
+    <section class="section-4" id="test">
+     <!-- <div class="container text-center">
+        <h1 class="text-dark">What our Reader's Say about us</h1>
+        <p class="text-secondary"></p>
+      </div>
+      <div class="team row ">
+        <div class="col-md-4 col-12 text-center">
+            <div class="card mr-2 d-inline-block shadow-lg">
+                <div class="card-img-top">
+                  <img src="../assets/san.png"   class="img-fluid rounded-circle w-50 p-4" alt="">
+                </div>
+                <div class="card-body">
+                  <h3 class="card-title">Santhosh</h3>
+                  <p class="card-text">
+                    It’s impossible not to mention Treasure-Chest when discussing book communities: Best collection site of all pre-used books with minimal amout of price.beyond we get all pre-user markings along the book.
+                  </p>
+                  <a href="#" class="text-secondary text-decoration-none"></a>
+                  <p class="text-black-50">@ KEC</p>
+                </div>
+              </div>
+        </div>
+        <div class="col-md-4 col-12">
+            <div id="carouselExampleControls" class="carousel slide " data-ride="carousel">
+                <div class="carousel-inner text-center">
+                  <div class="carousel-item active">
+                    <div class="card mr-2 d-inline-block shadow">
+                      <div class="card-img-top">
+                        <img src="../assets/sow.jpg" class="img-fluid rounded-circle w-50 p-4" alt="no-img">
+                      </div>
+                      <div class="card-body">
+                        <h3 class="card-title">Sowbakiyan</h3>
+                        <p class="card-text">
+                            Treasure-Chest is doing a great job in not only bringing out the best in vibrant young people but also teaches them to drag their intelligence to attain the glorious path of victory 
+                        </p>
+                        <a href="#" class="text-secondary text-decoration-none"></a>
+                        <p class="text-black-50">@ KEC</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="card  d-inline-block mr-2 shadow">
+                      <div class="card-img-top">
+                        <img src="../assets/shake.jpg" class="img-fluid rounded-circle w-50 p-4" alt="">
+                      </div>
+                      <div class="card-body">
+                        <h3 class="card-title">Shekky</h3>
+                        <p class="card-text">
+                            One of the best blog that i have ever seen in my life , Awesome Services with their flexibility and goog quality of books. Best collection site of all pre-used books with minimal amout of price.
+                        </p>
+                        <a href="#" class="text-secondary text-decoration-none"></a>
+                        <p class="text-black-50">@vidhu</p>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+        </div>
+        </div>
+        <div class="col-md-4 col-12 text-center">
+            <div class="card mr-2 d-inline-block shadow-lg">
+                <div class="card-img-top">
+                  <img src="../assets/saran.jpg"  class="img-fluid rounded-circle w-50 p-4" alt="">
+                </div>
+                <div class="card-body">
+                  <h3 class="card-title">Saran</h3>
+                  <p class="card-text">
+                    Very proud to be a part of Treasure Chest , had a  good experiened with the blog such a delighted one i were loved a lot. Best collection site of all pre-used books with minimal amout of price.
+                  </p>
+                  <a href="#" class="text-secondary text-decoration-none"></a>
+                  <p class="text-black-50">@ Kvb</p>
+                </div>
+              </div>
+        </div>
+      </div> -->
+    </section> 
+ 
+  </main>
+  <footer id="contact">
+    <div class="container-fluid p-0">
+      <div class="row text-left">
+        <div class="col-sm-5 col-sm-5">
+          <h4 class="text-light">About us</h4>
+          <p class="text-muted"> Ensuring a positive customer experience, making available goods and/or services that are of top-notch quality is given prime importance. India’s leading B2B market place, Jd Mart ensures engaging in business activities is a seamless process for small and medium enterprises as well as large businesses. </p>
+          <p class="pt-4 text-muted">Copyright ©2021 KEC
+ 
+          </p>
+        </div>
+        <div class="col-md-5 col-sm-12" >
+          <h4 class="text-light">Email Us</h4>
+ 
+          <form class="form-inline">
+            <div class="col pl-0">
+              <div class="input-group pr-5">
+                <input type="text" class="form-control bg-dark text-white"  id="inlineFormInputGroupUsername2" placeholder="your message">
+                    <div class="input-group-prepend">
+                  <div class="input-group-text">
+                  <i onclick="window.location.href='mailto:santhoshsan82000@gmail.com'" class="fas fa-arrow-right"></i>
+                  </div>
+                
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="col-md-2 col-sm-12">
+          <h4 class="text-light">Follow Us</h4>
+          <p class="text-muted">Let us be social</p>
+          <div class="column text-light">
+          <a href="https://m.facebook.com/profile.php?id=100011862872372&ref=content_filter"> <i class="fab fa-facebook-f"></i></a> &nbsp&nbsp
+          <a href="https://wa.me/+916383211260">   <i class="fab fa-whatsapp"></i></a>&nbsp&nbsp
+          <a href="mailto:santhoshsan82000@gmail.com"><i class="i fas fa-envelope "></i></a>&nbsp&nbsp
+          <a href="https://www.linkedin.com/mwlite/in/santhosh-kumar-8039651ba"><i class="i fab fa-linkedin"></i></a>&nbsp
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+ 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <script src="./main.js"></script>
+</body>
+ 
+</html>
